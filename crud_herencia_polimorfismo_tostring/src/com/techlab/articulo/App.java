@@ -86,6 +86,7 @@ abstract class ConsolaUtils {
             switch (opcion) {
                 case 1:
                     ingresarArticulo(scanner, articulos, categorias);
+                    ConsolaUtils.pausar(scanner);
                     break;
                 case 2:
                     listarArticulos(articulos);
@@ -112,6 +113,7 @@ abstract class ConsolaUtils {
                     break;
                 case 6:
                     listarCategorias(categorias);
+                    ConsolaUtils.pausar(scanner);
                     break;
                 case 0:
                     System.out.println("\nSaliendo del sistema. ¡Hasta luego!");
